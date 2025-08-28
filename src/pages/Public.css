@@ -4,11 +4,13 @@
   gap: 5px;
   margin-top: 20px;
   color: black;
+  grid-template-areas: "c b";
 }
 .cart {
   background-color: #f9f9f9;
   padding: 15px;
   border-radius: 10px;
+  grid-area: c;
 }
 
 .table {
@@ -29,4 +31,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  grid-area: b;
+}
+
+@media (max-width: 575px) {
+  .app {
+    grid-template-columns: 1fr; /* egy oszlop */
+    grid-template-areas:
+      "c"
+      "b"; /* cart fent, books alatt */
+  }
+  .books {
+    justify-content: center;
+  }
 }
