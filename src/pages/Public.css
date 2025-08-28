@@ -36,10 +36,10 @@
 
 @media (max-width: 575px) {
   .app {
-    grid-template-columns: 1fr; /* egy oszlop */
+    grid-template-columns: 1fr;
     grid-template-areas:
       "c"
-      "b"; /* cart fent, books alatt */
+      "b";
   }
   .books {
     justify-content: center;
