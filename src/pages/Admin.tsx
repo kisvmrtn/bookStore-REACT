@@ -33,17 +33,6 @@ export default function Admin() {
     deleteBook(id);
   }
 
-  // async function deleteBook(id: number) {
-  //   try {
-  //     await fetch(`${"http://localhost:3001/data"}/${id}`, {
-  //       method: "DELETE",
-  //     });
-  //     setBooks((prev) => prev.filter((book) => book.id !== id));
-  //   } catch (error) {
-  //     console.error("Error while deleting a book: ", error);
-  //   }
-  // }
-
   return (
     <>
       <h3>Admin felület</h3>
