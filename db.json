@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "author": "Robert Merle",
+      "title": "Malevil",
+      "price": "3424",
+      "id": "0"
+    },
+    {
+      "author": "Molnár Ferenc",
+      "title": "A Pál utcai fiúk",
+      "price": "2346",
+      "id": "1"
+    },
+    {
+      "author": "Wass Albert",
+      "title": "A Funtinelli boszorkány",
+      "price": "3345",
+      "id": "2"
+    },
+    {
+      "author": "Wass Albert",
+      "title": "Elvásik a veres csillag",
+      "price": "3000",
+      "id": "3"
+    }
+  ]
+}

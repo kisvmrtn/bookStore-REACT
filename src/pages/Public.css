@@ -1,0 +1,30 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5px;
+  margin-top: 20px;
+  color: black;
+}
+.cart {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.books {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+}
