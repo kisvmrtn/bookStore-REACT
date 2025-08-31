@@ -1,3 +1,4 @@
+import BookAdmin from "../components/BookAdmin";
 import Form from "../components/Form";
 import { deleteBook, useBooks } from "../services/api";
 import "./Admin.css";
@@ -41,12 +42,14 @@ export default function Admin() {
         <p style={{ color: "red" }}>Loading...</p>
       ) : (
         books.map((book) => (
-          <div className="editBook" key={book.id}>
-            <p>{book.author}</p>
-            <p>{book.title}</p>
-            <p>{book.price} Ft</p>
-            <button onClick={() => handleDelete(book.id!)}>X</button>
-          </div>
+          <BookAdmin
+            key={book.id}
+            author={book.author}
+            title={book.title}
+            price={book.price}
+            id={book.id}
+            onDelete={() => handleDelete(book.id)}
+          ></BookAdmin>
         ))
       )}
     </>

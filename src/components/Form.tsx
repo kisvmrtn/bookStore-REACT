@@ -29,6 +29,7 @@ export default function Form({ addBook }: PropsType) {
   return (
     <>
       <div className="formField">
+        <h3>Könyv felvétele</h3>
         <label>
           Szerző:
           <input type="text" name="author" onChange={handleChange} />

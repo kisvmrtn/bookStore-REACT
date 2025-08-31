@@ -18,7 +18,7 @@ export function useBooks() {
         .then((res) => res.json())
         .then((data) => setBooks(data))
         .finally(() => setLoading(false));
-    }, 2000);
+    }, 800);
   }, []);
 
   return { books, setBooks, loading };
