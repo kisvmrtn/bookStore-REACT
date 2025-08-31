@@ -34,6 +34,10 @@ export default function Admin() {
     deleteBook(id);
   }
 
+  function handleEdit(updatedBook: Books) {
+    console.log(updatedBook);
+  }
+
   return (
     <>
       <h3>Admin felület</h3>
@@ -47,7 +51,7 @@ export default function Admin() {
             author={book.author}
             title={book.title}
             price={book.price}
-            id={book.id}
+            onEdit={handleEdit}
             onDelete={() => handleDelete(book.id)}
           ></BookAdmin>
         ))

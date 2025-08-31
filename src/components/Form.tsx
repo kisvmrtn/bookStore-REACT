@@ -14,6 +14,7 @@ type Book = {
 
 export default function Form({ addBook }: PropsType) {
   const [form, setForm] = useState({ author: "", title: "", price: 0 });
+
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const { name, value } = e.target;
     setForm({

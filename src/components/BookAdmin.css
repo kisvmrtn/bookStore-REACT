@@ -1,0 +1,38 @@
+.adminBook {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.adminBook p {
+  margin: 0;
+  flex: 1;
+}
+
+.adminBook button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.adminBook button:hover {
+  background-color: #e60000;
+}
+
+#edit {
+  background-color: rgb(85, 66, 66);
+}
+#price {
+  max-width: 50px;
+}
